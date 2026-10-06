@@ -1,0 +1,65 @@
+/* ===== Product Card ===== */
+.ProductCart {
+    width: 18rem;
+    padding: 1.2rem;
+    background: var(--apple-surface);
+    border-radius: var(--apple-radius);
+    border: 1px solid var(--apple-border);
+    box-shadow: var(--apple-shadow);
+    transition: transform var(--transition), box-shadow var(--transition);
+    animation: cardFadeIn 0.4s ease both;
+}
+
+@keyframes cardFadeIn {
+    from { opacity: 0; transform: scale(0.97) translateY(8px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.ProductCart:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--apple-shadow-md);
+}
+
+/* ===== Product Title ===== */
+.ProductCart h3 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: var(--apple-text);
+    font-size: 0.92rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Link wrapper ===== */
+.ProductCart > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* ===== Product Image ===== */
+.ProductCart img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: contain;
+    border-radius: var(--apple-radius-sm);
+    background: var(--apple-bg);
+    padding: 0.5rem;
+    transition: transform var(--transition);
+}
+
+.ProductCart:hover img {
+    transform: scale(1.04);
+}
+
+/* ===== Price ===== */
+.ProductCart h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--apple-text);
+    align-self: flex-start;
+}

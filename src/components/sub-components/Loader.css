@@ -1,0 +1,19 @@
+/* ===== Loader Spinner ===== */
+.Loadding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.Loadding svg circle {
+    stroke: var(--apple-blue);
+    stroke-linecap: round;
+    animation: spin 1s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}

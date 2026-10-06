@@ -1,0 +1,24 @@
+/* ===== Layout ===== */
+main {
+    min-height: 80vh;
+    padding: 2.5rem 3rem;
+    background-color: var(--apple-bg);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Flex Utilities ===== */
+.dflex, .dflex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.dflex-c {
+    flex-direction: column;
+}

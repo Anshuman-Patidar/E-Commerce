@@ -1,0 +1,70 @@
+/* ===== Display Page ===== */
+.Display {
+    background: var(--apple-surface);
+    border-radius: 20px;
+    border: 1px solid var(--apple-border);
+    box-shadow: var(--apple-shadow-md);
+    padding: 2.5rem 2rem;
+    max-width: 860px;
+    margin: 0 auto;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Layout inside Display ===== */
+.subDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+/* ===== Product Image ===== */
+.subDisplay > img {
+    width: 18rem;
+    object-fit: contain;
+    border-radius: var(--apple-radius);
+    background: var(--apple-bg);
+    padding: 1rem;
+    transition: transform var(--transition);
+}
+
+.subDisplay > img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== Product Info ===== */
+.subSubDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    font-size: 1rem;
+    max-width: 340px;
+}
+
+.subSubDisplay h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--apple-text);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.subSubDisplay h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--apple-blue);
+}
+
+.subSubDisplay p {
+    font-size: 0.92rem;
+    color: var(--apple-secondary);
+    line-height: 1.6;
+}

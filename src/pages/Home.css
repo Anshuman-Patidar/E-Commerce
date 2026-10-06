@@ -1,0 +1,13 @@
+/* ===== Home page grid ===== */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProductCart{
+    min-
+}

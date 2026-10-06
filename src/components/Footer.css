@@ -1,0 +1,12 @@
+/* ===== Footer ===== */
+footer {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--apple-surface);
+    border-top: 1px solid var(--apple-border);
+    color: var(--apple-secondary);
+    font-size: 0.82rem;
+    letter-spacing: 0.1px;
+}

@@ -1,0 +1,33 @@
+/* ===== Add to Cart Button ===== */
+.Addtocart {
+    width: 100%;
+    margin-top: 0.4rem;
+}
+
+.Addtocart > button {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Inter', -apple-system, sans-serif;
+    border: none;
+    border-radius: 980px;
+    background-color: var(--apple-blue);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 0.1px;
+    transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 113, 227, 0.3);
+}
+
+.Addtocart > button:hover {
+    background-color: var(--apple-blue-hover);
+    transform: scale(1.02);
+    box-shadow: 0 4px 14px rgba(0, 113, 227, 0.4);
+}
+
+.Addtocart > button:active {
+    background-color: var(--apple-blue-dark);
+    transform: scale(0.98);
+    box-shadow: none;
+}
